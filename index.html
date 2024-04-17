@@ -11,7 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400,700&family=Playfair+Display:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
     <!-- Styles -->
@@ -29,8 +33,9 @@
       <div class="container">
         <div class="header__inner">
           <a href="#" class="logo"
-            ><img src="./images/LOGO-desktop.svg" alt="Dior logo"
-          /></a>
+            ><svg width="120" height="50">
+              <use href="./images/icons/sprite.svg#icon-LOGO"></use></svg
+          ></a>
           <h3 class="header__title">LA COLLECTION PRIVÉE CHRISTIAN DIOR</h3>
           <nav class="menu">
             <ul class="menu__list">
@@ -55,13 +60,19 @@
           <ul class="user-nav">
             <li class="user-nav__item">
               <a href="#" class="user-nav__link"
-                ><img src="./images/icons/favorite.svg" alt="fvorite"
-              /></a>
+                ><svg width="24" height="24">
+                  <use
+                    href="./images/icons/sprite.svg#icon-favorite"
+                  ></use></svg
+              ></a>
             </li>
             <li class="user-nav__item">
               <a href="#" class="user-nav__link"
-                ><img src="./images/icons/cart.svg" alt="cart"
-              /></a>
+                ><svg width="24" height="24">
+                  <use
+                    href="./images/icons/sprite.svg#icon-shopping-bag"
+                  ></use></svg
+              ></a>
             </li>
           </ul>
         </div>
@@ -75,7 +86,6 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-
           <div class="swiper-slide">
             <div class="top-slide">
               <div class="container container__first-slider">
@@ -130,10 +140,14 @@
         <!-- Navigation buttons -->
         <div class="container container-arrows">
           <div class="swiper-button-prev">
-            <img src="./images/icons/arrow-left.svg" alt="" />
+            <svg width="50" height="">
+              <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
+            </svg>
           </div>
           <div class="swiper-button-next">
-            <img src="./images/icons/arrow-right.svg" alt="" />
+            <svg width="50" height="2">
+              <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -223,10 +237,14 @@
             <!-- Navigation buttons -->
             <div class="container-arrows about__arows">
               <div class="swiper-button-prev">
-                <img src="./images/icons/arrow-left.svg" alt="" />
+                <svg width="50" height="">
+                  <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
+                </svg>
               </div>
               <div class="swiper-button-next">
-                <img src="./images/icons/arrow-right.svg" alt="" />
+                <svg width="50" height="">
+                  <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+                </svg>
               </div>
             </div>
             <a href="#" class="about__btn">SHOW ME MORE</a>
@@ -247,7 +265,9 @@
                 of the House of Dior that embodies the bold spirit of Christian
                 Dior.
               </p>
-              <img src="./images/icons/arrow-down.svg" alt="" />
+              <svg width="50" height="50">
+                <use href="./images/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
             </div>
             <div class="accordion__content">
               <p>
@@ -271,7 +291,9 @@
                 not merely a mix of black and white, but the result of a
                 chromatic blend.”
               </p>
-              <img src="./images/icons/arrow-down.svg" alt="" />
+              <svg width="50" height="50">
+                <use href="./images/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
             </div>
             <div class="accordion__content">
               <p>
@@ -293,7 +315,9 @@
               <p class="accoredion__trigger-text">
                 Spray Gris Dior on pulse points: neck and wrists.
               </p>
-              <img src="./images/icons/arrow-down.svg" alt="" />
+              <svg width="50" height="50">
+                <use href="./images/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
             </div>
             <div class="accordion__content">
               <p>
@@ -312,7 +336,9 @@
           <div class="accordion__item">
             <div class="accordion__trigger">
               <p class="accoredion__trigger-title">INGREDIENTS</p>
-              <img src="./images/icons/arrow-down.svg" alt="" />
+              <svg width="50" height="50">
+                <use href="./images/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
             </div>
             <div class="accordion__content">
               <p>
@@ -386,7 +412,9 @@
       <div class="container">
         <div class="video__box">
           <button class="video__btn">
-            <img src="./images/icons/btn-play.svg" alt="" />
+            <svg width="40" height="40">
+              <use href="./images/icons/sprite.svg#icon-play"></use>
+            </svg>
           </button>
         </div>
       </div>
@@ -397,8 +425,9 @@
       <div class="container">
         <div class="footer__top-container">
           <a href="#" class="logo"
-            ><img src="./images/LOGO-desktop.svg" alt="Dior logo"
-          /></a>
+            ><svg width="120" height="50">
+              <use href="./images/icons/sprite.svg#icon-LOGO"></use></svg
+          ></a>
           <div class="footer__top">
             <img
               src="./images/content-images/footer-img.jpg"
@@ -411,7 +440,7 @@
                   <h4 class="footer__item-form-text">
                     SIGN UP FOR EXCLUSIVITY
                   </h4>
-                  <input type="email" placeholder="E-mail" />
+                  <input name="userEmail" type="email" placeholder="E-mail" />
                   <button>
                     <img src="./images/icons/arrow-right.svg" alt="" />
                   </button>
@@ -439,32 +468,44 @@
                   href="https://www.youtube.com/user/dior/home/home"
                   target="_blank"
                   rel="noreferrer noopener"
-                  ><img src="./images/icons/youtube-icon.svg" alt=""
-                /></a>
+                  ><svg width="24" height="25">
+                    <use
+                      href="./images/icons/sprite.svg#icon-youtube"
+                    ></use></svg
+                ></a>
               </li>
               <li>
                 <a
                   href="https://twitter.com/dior"
                   target="_blank"
                   rel="noreferrer noopener"
-                  ><img src="./images/icons/twiter-icon.svg" alt=""
-                /></a>
+                  ><svg width="24" height="25">
+                    <use
+                      href="./images/icons/sprite.svg#icon-twitter"
+                    ></use></svg
+                ></a>
               </li>
               <li>
                 <a
                   href="https://www.facebook.com/Dior"
                   target="_blank"
                   rel="noreferrer noopener"
-                  ><img src="./images/icons/facebook-icon.svg" alt=""
-                /></a>
+                  ><svg width="24" height="25">
+                    <use
+                      href="./images/icons/sprite.svg#icon-facebook"
+                    ></use></svg
+                ></a>
               </li>
               <li>
                 <a
                   href="https://www.instagram.com/dior"
                   target="_blank"
                   rel="noreferrer noopener"
-                  ><img src="./images/icons/instagram-icon.svg" alt=""
-                /></a>
+                  ><svg width="24" height="25">
+                    <use
+                      href="./images/icons/sprite.svg#icon-instagram"
+                    ></use></svg
+                ></a>
               </li>
             </ul>
           </div>

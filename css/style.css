@@ -32,12 +32,9 @@ body {
   padding: 0 10px;
 }
 
+/*Header*/
 .header {
   margin-bottom: 50px;
-}
-
-.container__first-slider {
-  margin-top: 50px;
 }
 
 .header__inner {
@@ -75,6 +72,12 @@ body {
 
 .user-nav > li:not(:last-child) {
   margin-right: 20px;
+}
+
+/*Slider*/
+
+.container__first-slider {
+  padding-top: 50px;
 }
 
 .top {
@@ -413,10 +416,10 @@ body {
   align-items: center;
 }
 
-.video__btn {
+.video__btn svg {
   border: none;
-  background-color: transparent;
   padding: 0;
+  margin: 0;
   cursor: pointer;
 }
 
