@@ -28,3 +28,17 @@ const accordionEl = document
       item.parentNode.classList.toggle("accordion__item--active");
     })
   );
+
+/**
+ * Add YouTube Player
+ */
+
+const videoContainer = document.querySelector(".video__box");
+const videoPlayBtn = document.querySelector(".video__btn");
+const BASE_URL = "https://www.youtube-nocookie.com/embed/jcjoIOwnxKA";
+const markupString = `<iframe src="${BASE_URL}?autoplay=1&rel=0&color=white" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+
+videoPlayBtn.addEventListener("click", () => {
+  videoContainer.style.backgroundImage = "none";
+  videoContainer.insertAdjacentHTML("beforeend", markupString);
+});
