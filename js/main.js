@@ -21,11 +21,15 @@ const secondSwiper = new Swiper(".about__slider", {
   },
 });
 
+/**
+ * Accordion
+ */
+
 const accordionEl = document
-  .querySelectorAll(".accordion__trigger")
+  .querySelectorAll(".accordion__intro")
   .forEach((item) =>
     item.addEventListener("click", () => {
-      item.parentNode.classList.toggle("accordion__item--active");
+      item.parentNode.classList.toggle("active");
     })
   );
 

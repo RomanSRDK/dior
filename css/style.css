@@ -314,32 +314,9 @@ body {
   padding-left: 203px;
 }
 
-.accordion__trigger {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-right: 85px;
-  cursor: pointer;
-}
-
-.accoredion__trigger-title {
-  font-size: 24px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #000000;
-  width: 240px;
-}
-
-.accoredion__trigger-text {
-  font-size: 14px;
-  width: 367px;
-  line-height: 1.2;
-  color: #000000;
-}
-
 .accordion__item {
   position: relative;
-  padding-bottom: 20px;
+  padding-right: 85px;
 }
 
 .accordion__item::after {
@@ -353,28 +330,75 @@ body {
   background-color: #000;
 }
 
-.accordion__content {
-  padding-top: 20px;
-  display: none;
-}
-
-.accordion__item--active .accordion__content {
-  display: block;
-}
-
 .accordion__item:not(:first-child) {
   padding-top: 50px;
 }
 
-/* .accordion__inner::after {
+.accordion__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.accordion__intro-title {
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #000000;
+  width: 230px;
+}
+
+.accordion__intro-text {
+  width: 387px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.accordion-icon {
+  transition: transform 0.5s ease;
+}
+
+.active .accordion-icon {
+  transform: scaleY(-1);
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  padding-bottom: 0;
+  max-width: 794px;
+  transition: max-height 1.4s ease, padding-bottom 1.4s ease;
+}
+
+.active .accordion__content {
+  max-height: 300px;
+  padding-bottom: 20px;
+  animation: fade 1s ease-in-out;
+}
+
+.accordion__inner::after {
   content: "";
   position: absolute;
   left: 470px;
-  bottom: -73px;
+  bottom: -80px;
   background-image: url(../images/content-images/accordion-img.jpg);
   width: 65px;
   height: 120px;
-} */
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 /*Other products*/
 .products {
@@ -508,10 +532,7 @@ body {
   fill: currentColor;
 }
 
-/*Footer
-
-
-*/
+/*Footer*/
 .footer a {
   color: #000000;
 }
