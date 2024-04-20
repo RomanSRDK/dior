@@ -76,17 +76,6 @@
       </div>
     </header>
 
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-
     <!--Slider section-->
     <section class="top">
       <!-- Slider main container -->
@@ -148,12 +137,12 @@
         <!-- Navigation buttons -->
         <div class="container container-arrows">
           <div class="swiper-button-prev">
-            <svg width="50" height="">
+            <svg width="50" height="20">
               <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
             </svg>
           </div>
           <div class="swiper-button-next">
-            <svg width="50" height="2">
+            <svg width="50" height="20">
               <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
             </svg>
           </div>
@@ -245,12 +234,12 @@
             <!-- Navigation buttons -->
             <div class="container-arrows about__arows">
               <div class="swiper-button-prev">
-                <svg width="50" height="">
+                <svg width="50" height="20">
                   <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
                 </svg>
               </div>
               <div class="swiper-button-next">
-                <svg width="50" height="">
+                <svg width="50" height="15">
                   <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
                 </svg>
               </div>
@@ -428,11 +417,22 @@
       </div>
     </div>
 
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+
     <!--Footer-->
     <footer class="footer">
       <div class="container">
         <div class="footer__top-container">
-          <a href="#" class="logo"
+          <a href="./index.html" class="logo"
             ><svg width="120" height="50">
               <use href="./images/icons/sprite.svg#icon-LOGO"></use></svg
           ></a>
@@ -443,46 +443,66 @@
               class="footer__top--img"
             />
             <div class="footer__items">
-              <div class="footer__item-form">
-                <form action="" novalidate>
-                  <h4 class="footer__item-form-text">
-                    SIGN UP FOR EXCLUSIVITY
-                  </h4>
-                  <input name="userEmail" type="email" placeholder="E-mail" />
-                  <button>
-                    <img src="./images/icons/arrow-right.svg" alt="" />
+              <div>
+                <h4 class="footer__item-form-text">SIGN UP FOR EXCLUSIVITY</h4>
+                <form class="footer__item-form" action="" novalidate>
+                  <input
+                    class="footer__item_input"
+                    name="userEmail"
+                    type="email"
+                    placeholder="E-mail"
+                  />
+                  <button class="footer__item_btn" type="submit">
+                    <svg width="50" height="15">
+                      <use
+                        href="./images/icons/sprite.svg#icon-arrow-right"
+                      ></use>
+                    </svg>
                   </button>
                 </form>
               </div>
-              <div class="footer__item--location">
-                <ul>
-                  <li>FIND A BOUTIQUE</li>
-                  <li>Parfums Christian Dior Boutiques</li>
-                  <li>Christian Dior Couture Boutiques</li>
-                </ul>
-              </div>
-              <div class="footer__item--servises">
-                <ul>
-                  <li>CLIENT SERVICES</li>
-                  <li>Contact Parfums Christian Dior</li>
-                  <li>Delivery & Returns</li>
-                  <li>FAQ</li>
-                </ul>
-              </div>
+
+              <ul class="footer__item--list">
+                <li><h5>FIND A BOUTIQUE</h5></li>
+                <li>
+                  <a class="footer__item-link" href=""
+                    >Parfums Christian Dior Boutiques</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__item-link" href=""
+                    >Christian Dior Couture Boutiques</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="footer__item--list">
+                <li><h5>CLIENT SERVICES</h5></li>
+                <li>
+                  <a class="footer__item-link" href=""
+                    >Contact Parfums Christian Dior</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__item-link" href="">Delivery & Returns</a>
+                </li>
+                <li><a class="footer__item-link" href="">FAQ</a></li>
+              </ul>
             </div>
+
             <ul class="footer__social-icons">
-              <li>
+              <li class="icon-container">
                 <a
                   href="https://www.youtube.com/user/dior/home/home"
                   target="_blank"
                   rel="noreferrer noopener"
-                  ><svg width="24" height="25">
-                    <use
-                      href="./images/icons/sprite.svg#icon-youtube"
-                    ></use></svg
-                ></a>
+                >
+                  <svg width="24" height="25">
+                    <use href="./images/icons/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
+              <li class="icon-container">
                 <a
                   href="https://twitter.com/dior"
                   target="_blank"
@@ -493,7 +513,7 @@
                     ></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="icon-container">
                 <a
                   href="https://www.facebook.com/Dior"
                   target="_blank"
@@ -504,7 +524,7 @@
                     ></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="icon-container">
                 <a
                   href="https://www.instagram.com/dior"
                   target="_blank"
