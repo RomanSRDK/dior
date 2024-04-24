@@ -115,7 +115,6 @@ body {
 }
 
 /*Slider*/
-
 .container__first-slider {
   padding-top: 50px;
 }
@@ -201,9 +200,19 @@ body {
   background-color: #7449bb;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
   content: none;
+}
+
+.swiper-button-next svg:hover,
+.swiper-button-prev svg:hover {
+  fill: #7449bb;
 }
 
 .container-arrows {
@@ -295,6 +304,7 @@ body {
 
 .about__btn {
   display: inline-block;
+  margin-top: 20px;
   color: #7449bb;
   text-transform: uppercase;
   font-weight: 700;
