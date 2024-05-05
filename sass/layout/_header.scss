@@ -1,0 +1,81 @@
+.header {
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-logo {
+  fill: #1b1b1b;
+}
+
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+.menu {
+  margin-right: 185px;
+  margin-left: 130px;
+}
+
+.menu__list-item {
+  font-size: 12px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.menu__list-item a {
+  position: relative;
+  color: #1b1b1b;
+  transition: color 300ms;
+}
+
+.menu__list-item a:hover,
+.menu__list-item a:focus {
+  color: #7449bb;
+}
+
+.menu__list-item a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #7449bb;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.menu__list-item a:hover::after,
+.menu__list-item a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.menu__list > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.user-nav {
+  display: flex;
+  gap: 0 20px;
+}
+
+.user-nav__item a {
+  fill: #0f0f0f;
+  transition: fill 300ms;
+}
+
+.user-nav__item a:hover,
+.user-nav__item a:focus {
+  fill: #7449bb;
+}
