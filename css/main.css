@@ -191,9 +191,16 @@ body {
 }
 
 .container {
-  max-width: 1220px;
-  margin: 0 auto;
+  width: 1220px;
   padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Адаптивная настройка изображения */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 @font-face {
@@ -201,8 +208,8 @@ body {
   src: url(../../fonts/CenturyGothic.ttf);
 }
 .header {
-  margin-bottom: 50px;
   padding-top: 30px;
+  margin-bottom: 50px;
 }
 
 .header__inner {
@@ -228,6 +235,12 @@ body {
   margin-left: 130px;
 }
 
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .menu__list-item {
   font-size: 12px;
   line-height: 1.25;
@@ -239,9 +252,7 @@ body {
   color: #1b1b1b;
   transition: color 300ms;
 }
-
-.menu__list-item a:hover,
-.menu__list-item a:focus {
+.menu__list-item a:hover, .menu__list-item a:focus {
   color: #7449bb;
 }
 
@@ -256,15 +267,9 @@ body {
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
-
-.menu__list-item a:hover::after,
-.menu__list-item a:focus::after {
+.menu__list-item a::after:hover::after, .menu__list-item a::after:focus::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
-}
-
-.menu__list > li:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .user-nav {
@@ -276,9 +281,7 @@ body {
   fill: #0f0f0f;
   transition: fill 300ms;
 }
-
-.user-nav__item a:hover,
-.user-nav__item a:focus {
+.user-nav__item a:hover, .user-nav__item a:focus {
   fill: #7449bb;
 }
 
@@ -539,25 +542,24 @@ body {
       right: 0;
     }
   } */
-.container__first-slider {
-  padding-top: 50px;
-}
-
 .top {
   margin-bottom: 100px;
 }
 
-.top-slide {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+.container__first-slider {
+  padding-top: 50px;
 }
 
 .top-slide__inner {
   min-height: 700px;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+}
+
+.top-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .top-slide__wrapper {
@@ -618,7 +620,6 @@ body {
   padding: 21px 36px;
   transition: all 0.3s;
 }
-
 .top-slide__button:hover {
   color: #fff;
   background-color: #7449bb;

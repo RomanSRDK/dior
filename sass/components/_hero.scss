@@ -6,17 +6,17 @@
   padding-top: 50px;
 }
 
-.top-slide {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
 .top-slide__inner {
   min-height: 700px;
   display: flex;
   align-items: center;
   // padding: 0 10px;
+}
+
+.top-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .top-slide__wrapper {
