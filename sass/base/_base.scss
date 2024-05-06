@@ -26,7 +26,14 @@ body {
 }
 
 .container {
-  max-width: 1220px;
-  margin: 0 auto;
+  width: 1220px;
   padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Адаптивная настройка изображения */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

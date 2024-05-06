@@ -76,11 +76,10 @@
   border: 1px solid #7449bb;
   padding: 21px 36px;
   transition: all 0.3s;
-}
-
-.top-slide__button:hover {
-  color: #fff;
-  background-color: #7449bb;
+  &:hover {
+    color: #fff;
+    background-color: #7449bb;
+  }
 }
 
 .swiper-button-next,

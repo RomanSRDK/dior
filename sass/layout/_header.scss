@@ -1,6 +1,6 @@
 .header {
-  margin-bottom: 50px;
   padding-top: 30px;
+  margin-bottom: 50px;
 }
 
 .header__inner {
@@ -26,6 +26,12 @@
   margin-left: 130px;
 }
 
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .menu__list-item {
   font-size: 12px;
   line-height: 1.25;
@@ -36,11 +42,11 @@
   position: relative;
   color: #1b1b1b;
   transition: color 300ms;
-}
 
-.menu__list-item a:hover,
-.menu__list-item a:focus {
-  color: #7449bb;
+  &:hover,
+  &:focus {
+    color: #7449bb;
+  }
 }
 
 .menu__list-item a::after {
@@ -53,17 +59,17 @@
   background-color: #7449bb;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
 }
 
-.menu__list-item a:hover::after,
-.menu__list-item a:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
-}
-
-.menu__list > li:not(:last-child) {
-  margin-bottom: 10px;
-}
+// .menu__list > li:not(:last-child) {
+//   margin-bottom: 10px;
+// }
 
 .user-nav {
   display: flex;
@@ -73,9 +79,9 @@
 .user-nav__item a {
   fill: #0f0f0f;
   transition: fill 300ms;
-}
 
-.user-nav__item a:hover,
-.user-nav__item a:focus {
-  fill: #7449bb;
+  &:hover,
+  &:focus {
+    fill: #7449bb;
+  }
 }
